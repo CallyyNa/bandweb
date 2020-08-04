@@ -13,13 +13,13 @@
 
 <body>
     <nav>
-        <div class="nav-header">
+        <div class="nav-header flex">
+            <span class="pseudo-nav-element"></span>
             <h1>Band name</h1>
-            <p id="login">Login</p>
             <i id="shop-basket" class="fa fa-shopping-basket"></i>
         </div>
         <div class="nav-menu">
-            <ul class="menu">
+            <ul class="menu flex">
                 <li> <a class="menu-link" href="/music">Music</a> </li>
                 <li> <a class="menu-link" href="/videos">Videos</a> </li>
                 <li> <a class="menu-link" href="/tour">Tour</a> </li>
@@ -32,11 +32,11 @@
         <section class="gallery">
             <img class="main-image" src="./rock-header.jpg" alt="Band name on tour">
         </section>
-        <section class="content">
+        <section class="content flex">
             <div class="content-column">
                 <div class="news">
                     <h2>News</h2>
-                    <div class="news-container">
+                    <div class="news-container flex">
                         <img class="news-pic" src="./news-pic-1.jpg" alt="Band Name concert in Belfast">
                         <div>
                             <p class="news-date">01/01/2020</p>
@@ -44,13 +44,13 @@
                             <p class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                            <div class="likes">
+                            <div class="likes flex">
                                 <i class="news-likes-icon fa fa-heart"></i>
                                 <p class="news-likes">38</p>
                             </div>
                         </div>
                     </div>
-                    <div class="news-container">
+                    <div class="news-container flex">
                         <img class="news-pic" src="./news-pic-2.jpg" alt="Band Name concert in Belfast">
                         <div>
                             <p class="news-date">01/01/2020</p>
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="news-container">
+                    <div class="news-container flex">
                         <img class="news-pic" src="./news-pic-3.jpg" alt="Band Name concert in Belfast">
                         <div>
                             <p class="news-date">01/01/2020</p>
@@ -97,10 +97,10 @@
                 <div class="tour-dates">
                     <h2>On Tour</h2>
                     <div class="tour-dates-container">
-                        <div class="tour-container">
+                        <div class="tour-container flex">
                             <div class="tour-date">
-                                <p class="tour-date-month">OCT</p>
-                                <p class="tour-date-day">20</p>
+                                <p class="tour-date-month flex">OCT</p>
+                                <p class="tour-date-day flex">20</p>
                             </div>
                             <div class="tour-info">
                                 <p class="tour-info-venue">Palladium, Tuesday 20:00</p>
@@ -110,10 +110,10 @@
                                 <a href="/tickets/köln/20102020"><i class="tour-action fa fa-arrow-right fa-2x"></i></a>
                             </div>
                         </div>
-                        <div class="tour-container">
+                        <div class="tour-container flex">
                             <div class="tour-date">
-                                <p class="tour-date-month">OCT</p>
-                                <p class="tour-date-day">23</p>
+                                <p class="tour-date-month flex">OCT</p>
+                                <p class="tour-date-day flex">23</p>
                             </div>
                             <div class="tour-info">
                                 <p class="tour-info-venue">Sporthalle, Friday 21:00</p>
@@ -124,15 +124,14 @@
                                         class="tour-action fa fa-arrow-right fa-2x"></i></a>
                             </div>
                         </div>
-                        <div class="tour-container">
+                        <div class="tour-container flex">
                             <div class="tour-date">
-                                <p class="tour-date-month">OCT</p>
-                                <p class="tour-date-day">30</p>
+                                <p class="tour-date-month flex">OCT</p>
+                                <p class="tour-date-day flex">30</p>
                             </div>
                             <div class="tour-info">
                                 <p class="tour-info-venue">Tempelhofer Feld, Friday 21:00</p>
                                 <p class="tour-info-location">BERLIN, Germany</p>
-                                <!-- <a class="tour-info-tickets" href="/tickets/berlin/30102020">Tickets </a> -->
                             </div>
                             <div>
                                 <a href="/tickets/berlin/30102020"><i
@@ -148,13 +147,13 @@
     </main>
     <footer>
         <div class="footer-contact">
-            <h3>Keep in contact</h3>
-            <p>Join the newsletter to rock on!</p>
+            <h3 class="footer-header">Keep in contact</h3>
+            <p class="footer-text">Join the newsletter to rock on!</p>
             <div>
                 <input class="contact-input" type="text" placeholder="Email Address">
                 <button class="contact-button">Sign-Up</button>
             </div>
-            <div>
+            <div class="footer-socials flex">
                 <i class="fa fa-youtube fa-2x"></i>
                 <i class="fa fa-facebook-square fa-2x"></i>
                 <i class="fa fa-twitter-square fa-2x"></i>
@@ -164,10 +163,10 @@
                 <i class="fa fa-soundcloud fa-2x"></i>
             </div>
         </div>
-        <div class="footer-rights">
-            <p>Copyright © 2020 name studios. All Rights Reserved</p>
-            <a href="/policy">Privacy & Cookie Policy</a>
-            <p>Designed by Carla Naujoks</p>
+        <div class="footer-rights flex">
+            <p class="footer-text">Copyright © 2020 name studios. All Rights Reserved</p>
+            <a class="footer-text" href="/policy">Privacy & Cookie Policy</a>
+            <p class="footer-text">Designed by Carla Naujoks</p>
         </div>
     </footer>
 </body>
