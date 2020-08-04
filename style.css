@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #191414;
+    margin: 0 5%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    position:fixed; 
+	z-index:10;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    color: #00FF66;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 35px;
+}
+
+h2 {
+    color: #00FF66;
+    font-size: 30px;
+    font-family: 'Tenor Sans', sans-serif;
+}
+
+button {
+    background-color: #00FF66;
+    color: black;
+    border: 0;
+    height: 20px;
+    width: 40px;
+}
+
+input {
+    background: none;
+    border: 1px solid #00FF66;
+    height: 20px;
+    padding-left: 10px;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 2em;
+    padding: 1em 0;
+}
+
+
+.nav-header > * {
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu > li {
+    padding: 0 7em;
+    border-right: 1px solid #00FF66;
+}
+
+.menu > li:last-child {
+    border-right: 0;
+}
+
+.menu-link:hover {
+    color: #00FF66;
+    cursor: pointer;
+}
+
+#login {
+    color: #00FF66;
+}
+
+#shop-basket {
+    height: 20px;
+    width: 20px;
+    color: #00FF66;
+}
+
+main {
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
+
+.gallery {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #00FF66;
+}
+
+.main-image {
+    width: 100%;
+    height: 300px;
+}
+
+.content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-column {
+    width: 45%;
+}
+
+.content-column > div {
+    margin-bottom: 50px;
+}
+
+.content-column > div > h2 {
+    margin-bottom: 20px;
+}
+
+.news-container {
+    height: 150px;
+    border: 1px solid #00FF66;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.news-container:last-child {
+    margin-bottom: 0;
+}
+
+.news-pic {
+    width: 80px;
+    height: 100px;
+    margin-right: 25px;
+}
+
+.news-date, .news-content, .news-likes {
+    font-size: 12px;
+}
+
+.news-title {
+    font-weight: 700;
+}
+
+.news-date, .news-title, .news-content{
+    margin-bottom: 5px;
+} 
+
+.likes {
+    display: flex;
+    margin-top: 10px;
+}
+
+.news-likes{
+    margin-left: 15px;
+}
+
+.news-likes-icon {
+    color: #00FF66;
+}
+
+.video-player {
+    width: 100%;
+}
+
+.music-player {
+    width: 100%;
+}
+
+.tour-dates-container {
+    border: 1px solid #00FF66;
+    padding: 15px;
+}   
+
+.tour-container {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tour-date {
+    border: 1px solid #00FF66;
+    width: 100px;
+    height: 100px;
+}
+
+.tour-info {
+    width: 70%;
+}
+
+.tour-date-month {
+    height: 30%;
+    background-color: #00FF66;
+    color: black;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tour-date-day {
+    height: 70%;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tour-info > * {
+    margin-bottom: 5px;
+}
+
+.tour-info-venue, .tour-info-tickets {
+    font-size: 15px;
+}
+
+.tour-info-location {
+    font-weight: 700;
+    font-size: 30px;
+} 
+
+.tour-action {
+    color: #00FF66;
+}
+
+.tour-tickets-link {
+    font-weight: 700;
+}
+
+footer {
+    font-size: 13px;
+    border-top: 1px solid #00FF66;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon {
+    color: #00FF66;
+}
+
+.contact-button {
+    font-size: 10px;
+    width: 55px;
+}
+
+.contact-input {
+    font-size: 10px;
+}
+
+.footer-rights {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

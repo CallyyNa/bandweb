@@ -4,31 +4,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background-color: black;
-        }
-
-        h1 {
-            color: #00FF66;
-        }
-    </style>
+    <title>Band website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Roboto:wght@300;400;700&&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <h1>Band Name</h1>
-    <img src="./parker-coffman-u6bIBbmL178-unsplash.jpg" height="500" width="800">
-    <iframe src="https://open.spotify.com/embed/track/5OxclJsdFESni44YlpNpkR" width="300" height="80" frameborder="0"
-        allowtransparency="true" allow="encrypted-media">
-    </iframe>
-    <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:1Ffb6ejR6Fe5IamqA5oRUF&size=detail&theme=dark"
-        width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;"
-        allowtransparency="true"></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/VAXg78MKJcM" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/JfJYHfrOGgQ" frameborder="0" gesture="media"
-        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <nav>
+        <div class="nav-header">
+            <h1>Band name</h1>
+            <p id="login">Login</p>
+            <i id="shop-basket" class="fa fa-shopping-basket"></i>
+        </div>
+        <div class="nav-menu">
+            <ul class="menu">
+                <li> <a class="menu-link" href="/music">Music</a> </li>
+                <li> <a class="menu-link" href="/videos">Videos</a> </li>
+                <li> <a class="menu-link" href="/tour">Tour</a> </li>
+                <li> <a class="menu-link" href="/photos">Photos</a> </li>
+                <li> <a class="menu-link" href="/shop">Shop</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="gallery">
+            <img class="main-image" src="./rock-header.jpg" alt="Band name on tour">
+        </section>
+        <section class="content">
+            <div class="content-column">
+                <div class="news">
+                    <h2>News</h2>
+                    <div class="news-container">
+                        <img class="news-pic" src="./news-pic-1.jpg" alt="Band Name concert in Belfast">
+                        <div>
+                            <p class="news-date">01/01/2020</p>
+                            <p class="news-title">Concert in Belfast was rockin'</p>
+                            <p class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                            <div class="likes">
+                                <i class="news-likes-icon fa fa-heart"></i>
+                                <p class="news-likes">38</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-container">
+                        <img class="news-pic" src="./news-pic-2.jpg" alt="Band Name concert in Belfast">
+                        <div>
+                            <p class="news-date">01/01/2020</p>
+                            <p class="news-title">Thank you, London!</p>
+                            <p class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                            <div class="likes">
+                                <i class="news-likes-icon fa fa-heart"></i>
+                                <p class="news-likes">38</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-container">
+                        <img class="news-pic" src="./news-pic-3.jpg" alt="Band Name concert in Belfast">
+                        <div>
+                            <p class="news-date">01/01/2020</p>
+                            <p class="news-title">New record is out. Order today.</p>
+                            <p class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                            <div class="likes">
+                                <i class="news-likes-icon fa fa-heart"></i>
+                                <p class="news-likes">38</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <h2>Latest Video</h2>
+                    <iframe class="video-player" width="560" height="315"
+                        src="https://www.youtube.com/embed/VAXg78MKJcM" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="content-column">
+                <div class="music">
+                    <h2>Music</h2>
+                    <iframe class="music-player" src="https://open.spotify.com/embed/artist/1Ffb6ejR6Fe5IamqA5oRUF"
+                        width="300" height="380" frameborder="0" allowtransparency="true"
+                        allow="encrypted-media"></iframe>
+                </div>
+                <div class="tour-dates">
+                    <h2>On Tour</h2>
+                    <div class="tour-dates-container">
+                        <div class="tour-container">
+                            <div class="tour-date">
+                                <p class="tour-date-month">OCT</p>
+                                <p class="tour-date-day">20</p>
+                            </div>
+                            <div class="tour-info">
+                                <p class="tour-info-venue">Palladium, Tuesday 20:00</p>
+                                <p class="tour-info-location">KÖLN, Germany</p>
+                            </div>
+                            <div>
+                                <a href="/tickets/köln/20102020"><i class="tour-action fa fa-arrow-right fa-2x"></i></a>
+                            </div>
+                        </div>
+                        <div class="tour-container">
+                            <div class="tour-date">
+                                <p class="tour-date-month">OCT</p>
+                                <p class="tour-date-day">23</p>
+                            </div>
+                            <div class="tour-info">
+                                <p class="tour-info-venue">Sporthalle, Friday 21:00</p>
+                                <p class="tour-info-location">HAMBURG, Germany</p>
+                            </div>
+                            <div>
+                                <a href="/tickets/hamburg/23102020"><i
+                                        class="tour-action fa fa-arrow-right fa-2x"></i></a>
+                            </div>
+                        </div>
+                        <div class="tour-container">
+                            <div class="tour-date">
+                                <p class="tour-date-month">OCT</p>
+                                <p class="tour-date-day">30</p>
+                            </div>
+                            <div class="tour-info">
+                                <p class="tour-info-venue">Tempelhofer Feld, Friday 21:00</p>
+                                <p class="tour-info-location">BERLIN, Germany</p>
+                                <!-- <a class="tour-info-tickets" href="/tickets/berlin/30102020">Tickets </a> -->
+                            </div>
+                            <div>
+                                <a href="/tickets/berlin/30102020"><i
+                                        class="tour-action fa fa-arrow-right fa-2x"></i></a>
+                            </div>
+                        </div>
+                        <a class="tour-tickets-link" href="/tickets">More dates <i class="fa fa-arrow-right"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-contact">
+            <h3>Keep in contact</h3>
+            <p>Join the newsletter to rock on!</p>
+            <div>
+                <input class="contact-input" type="text" placeholder="Email Address">
+                <button class="contact-button">Sign-Up</button>
+            </div>
+            <div>
+                <i class="fa fa-youtube fa-2x"></i>
+                <i class="fa fa-facebook-square fa-2x"></i>
+                <i class="fa fa-twitter-square fa-2x"></i>
+                <i class="fa fa-instagram fa-2x"></i>
+                <i class="fa fa-spotify fa-2x"></i>
+                <i class="fa fa-itunes fa-2x"></i>
+                <i class="fa fa-soundcloud fa-2x"></i>
+            </div>
+        </div>
+        <div class="footer-rights">
+            <p>Copyright © 2020 name studios. All Rights Reserved</p>
+            <a href="/policy">Privacy & Cookie Policy</a>
+            <p>Designed by Carla Naujoks</p>
+        </div>
+    </footer>
 </body>
 
 </html>
