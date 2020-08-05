@@ -63,10 +63,19 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 30px;
+    flex-direction: row;
 }
 
 .flex {
     display: flex;
+}
+
+.pseudo-nav {
+    display: block;
+}
+
+.burger-menu-container {
+    display: none;
 }
 
 .nav-header {
@@ -89,7 +98,7 @@ footer {
 }
 
 .menu > li {
-    padding: 0 7em;
+    padding: 0 7%;
     border-right: 1px solid #00FF66;
 }
 
@@ -110,6 +119,7 @@ footer {
     height: 20px;
     width: 20px;
     color: #00FF66;
+    display: block;
 }
 
 main {
@@ -130,6 +140,7 @@ main {
 .content {
     margin-top: 50px;
     justify-content: space-around;
+    flex-direction: row;
 }
 
 .content-column {
@@ -145,10 +156,10 @@ main {
 }
 
 .news-container {
-    height: 150px;
+    height: auto;
     border: 1px solid #00FF66;
     align-items: center;
-    padding: 0 15px;
+    padding: 15px;
     margin-bottom: 20px;
 }
 
@@ -190,8 +201,13 @@ main {
     width: 100%;
 }
 
-.music-player {
+.music-player-desktop {
     width: 100%;
+    display: block;
+}
+
+.music-player-mobile {
+    display: none;
 }
 
 .tour-dates-container {
@@ -213,6 +229,7 @@ main {
 
 .tour-info {
     width: 70%;
+    padding: 0 15px;
 }
 
 .tour-date-month {
@@ -242,7 +259,7 @@ main {
 
 .tour-info-location {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
 } 
 
 .tour-action {
@@ -278,11 +295,92 @@ main {
 }
 
 .footer-socials {
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
 .footer-rights {
     flex-direction: column;
     align-items: flex-end;
+}
+
+    
+@media screen and (max-width: 767px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .pseudo-nav {
+        display: none;
+    }
+
+    .burger-menu-container {
+        display: block;
+    }
+    .burger-menu {
+        color: #00FF66;
+    }
+
+    main {
+        margin-top: 6em;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .content-column {
+        width: 100%;
+    }
+
+    .music-player-desktop {
+        display: none;
+    }
+
+    .music-player-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-rights {
+        margin-top: 40px;
+    }
+}
+    
+@media screen and (max-width: 479px) {
+    #shop-basket {
+        display: none;
+    }
+
+    .nav-header {
+        justify-content: flex-start;
+    }
+
+    .nav-header > h1 {
+        margin-left: 20px;
+    }
+
+    .main-image {
+        height: 200px;
+    }
+
+    .gallery {
+        padding-bottom: 30px;
+    }
+
+    .content {
+        margin-top: 30px;
+    }
+
+    .contact-input {
+        width: 170px;
+    }
+
+    .footer-text {
+        font-size: 10px;
+    }
 }
